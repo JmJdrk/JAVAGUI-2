@@ -94,15 +94,7 @@ class PanelAccion extends JPanel{
 		boton2.addActionListener(Boton2);
 		boton3.addActionListener(Boton3);
 		boton4.addActionListener(Boton4);
-		/*
-		AccionColor boton1 = new AccionColor("Amarillo", new ImageIcon("src/imagenes/img1.png"),1);
-		AccionColor boton2 = new AccionColor("Azul", new ImageIcon("src/imagenes/img2.png"),2);
-		AccionColor boton3 = new AccionColor("Rojo", new ImageIcon("src/imagenes/img3.png"),3);
 		
-		add(new JButton(boton1));
-		add(new JButton(boton2));
-		add(new JButton(boton3));
-		*/
 	}
 	//Declarar de Cuadros de Texto
 	JTextField texto1;
@@ -124,7 +116,7 @@ class PanelAccion extends JPanel{
 			id = c;
 			
 		}
-// { texto1.setText("Done!"); }
+
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			System.out.println("boton pulsado");
@@ -133,31 +125,5 @@ class PanelAccion extends JPanel{
 			 System.out.println(texto1.ge());
 		}
 	}
-	
-	
-	
-	//Declaro Clase Privada
-	
-	/*private class AccionColor extends AbstractAction{
-		public AccionColor(String nombre, Icon icono,int color_boton) {
-			putValue(Action.NAME, nombre);
-			putValue(Action.SMALL_ICON, icono);
-			putValue(Action.SHORT_DESCRIPTION, "" + nombre);
-			
-			putValue("color_fondo", color_boton);
-			
-		}
 
-		@Override
-		public void actionPerformed(ActionEvent arg0) {
-			int valor = (int) getValue("color_fondo");
-			
-			
-		}
-	}
-	*/
-	
-	
-	
-	
 }
